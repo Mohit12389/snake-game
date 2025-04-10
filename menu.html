@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnakeMania - Menu</title>
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SnakeMania</h1>
+        <div class="menu-options">
+            <button id="singlePlayer" class="menu-btn">Single Player</button>
+            <button id="multiPlayer" class="menu-btn">Multiplayer</button>
+        </div>
+        <div id="multiplayerOptions" class="hidden">
+            <button id="hostGame" class="menu-btn">Host Game</button>
+            <button id="joinGame" class="menu-btn">Join Game</button>
+        </div>
+        <div id="joinForm" class="hidden">
+            <input type="text" id="gameId" placeholder="Enter Game ID">
+            <button id="joinBtn" class="menu-btn">Join</button>
+        </div>
+        <div id="hostInfo" class="hidden">
+            <p>Your Game ID: <span id="gameCode"></span></p>
+            <p>Waiting for player to join...</p>
+        </div>
+    </div>
+    <script src="js/menu.js"></script>
+</body>
+</html> 
